@@ -101,14 +101,14 @@ Please review the `Security_Privacy_Analysis.rtf` file for important considerati
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit pull requests or open issues to report bugs or suggest improvements.
+Contributions are welcome, especially local-first setup fixes, tests, and safer search/LLM handling. See [CONTRIBUTING.md](CONTRIBUTING.md) for the full checklist.
 
-**Contribution Guidelines:**
+Before opening a pull request, run:
 
-*   **Coding Style:** Please follow [PEP 8](https://www.python.org/dev/peps/pep-0008/) guidelines for Python code. Consider using a linter like Flake8.
-*   **Testing:** If adding new features or fixing bugs, please try to include corresponding tests (if applicable). *(Note: Currently, no formal testing framework is set up, but this is encouraged for future contributions).*
-*   **Commits:** Write clear and concise commit messages.
-*   **Pull Requests:** Ensure your PR includes a clear description of the changes and why they are needed.
+```bash
+python3 -m pytest -q
+python3 -m py_compile llm_web_agent/*.py
+```
 
 ## License
 
